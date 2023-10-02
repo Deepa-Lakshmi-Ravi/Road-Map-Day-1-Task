@@ -1,0 +1,125 @@
+Object :
+    Objects, in JavaScript, are the most important data type and form 
+the building blocks for modern JavaScript. 
+    These objects are quite different from JavaScript’s primitive 
+data types (Number, String, Boolean, null, undefined, and symbol).
+    Primitive data types contain one value but Objects can hold many 
+values in form of Key: value pair. 
+    These keys can be variables or functions and are called properties 
+and methods.
+
+Syntax :
+    new Object(value)
+
+    Object(value)
+
+    let object_name = {
+       key_name : value,
+       ...
+       }
+Example :
+        const my = new Object();
+        my.name= "Deepa";
+  
+        console.log(my); 
+output:
+     {name:'Deepa'}              
+
+Creating Objects in JavaScript:
+
+    1.By object literal.
+    2.By creating instance of Object directly (using new keyword).
+    3.By using an object Constructor.
+
+1.By object literal:
+     One of easiest way to create a javascript object is object literal, 
+simply define the property and values inside curly braces as shown below
+
+Syntax :
+
+  object={property1:value1,property2:value2...propertyN:valueN}
+
+Property and value is separated by colon(:)
+
+Example 1:
+          var Person={
+            fname:"John",
+            lname:"Smith",
+            age:"22"
+          };
+
+2.By creating instance of Object directly (using new keyword):
+
+The syntax of creating object directly is given below:
+ 
+    var objectname = new Object();
+
+Here, new keyword is used to create object.
+
+Example 2:
+         var emp=new Object();
+         emp.id=101;
+         emp.name="John";
+         emp.salary=50000;
+
+3.By using an objact Constructor:
+     Constructor is nothing but a function and with help of new keyword, 
+constructor function allows to create multiple objects of same flavor as 
+shown below
+
+Example 3:
+         function Vehicle(name, maker) {
+         this.name = name;
+         this.maker = maker;
+         }
+         let car1 = new Vehicle(’Fiesta’, 'Ford’);
+         let car2 = new Vehicle(’Santa Fe’, 'Hyundai’)
+         console.log(car1.name);    //Output: Fiesta
+         console.log(car2.name);    //Output: Santa Fe
+
+Adding New Properties :
+
+You can add new properties to an existing object by simply giving 
+it a value.  
+
+Syntax:
+     ObjectName.ObjectProperty = propertyValue;
+
+Deleting Properties :
+
+The delete keyword deletes a property from an object.
+
+Syntax :
+      delete ObjectName.ObjectProperty;
+
+Accessing JavaScript Objects:
+
+The syntax for accessing the property of an object is:
+
+objectName.property
+
+or
+
+objectName[“property”] 
+
+or
+
+objectName[property]
+
+After creating emp object, the value inside the object can be accessed 
+using keys.
+
+emp.id
+
+Output: 101
+
+These values can be accessed using brackets notation also.
+
+emp[id]
+
+Output: 101
+
+
+
+      
+      
